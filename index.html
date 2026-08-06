@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kunal Bagde — Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>kunal.bagde</div>
+    <div class="navlinks" id="navlinks">
+      <a href="#about"><span class="num">01</span>about</a>
+      <a href="#experience"><span class="num">02</span>experience</a>
+      <a href="#projects"><span class="num">03</span>projects</a>
+      <a href="#skills"><span class="num">04</span>skills</a>
+      <a href="#education"><span class="num">05</span>education</a>
+      <a href="#contact"><span class="num">06</span>contact</a>
+    </div>
+    <button class="navtoggle" id="navtoggle" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Software Developer · Mumbai, India</div>
+      <h1 class="hero-title">Building reliable web apps,<br>now teaching them <span class="accent">to think.</span></h1>
+      <p class="hero-sub">
+        <b>Kunal Bagde</b> — 2.5+ years shipping production systems in C#, ASP.NET Core, Angular and MS SQL Server,
+        with a growing focus on AI/ML: retrieval-augmented chat, computer vision, and predictive models.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View projects →</a>
+        <a href="mailto:bagdekunal96@gmail.com" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="term-bar">
+        <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+        <span class="term-title">whoami.sh</span>
+      </div>
+      <div class="term-body" id="termBody">
+        <div class="term-line"><span class="prompt">kunal@dev</span>:<span class="path">~</span>$ whoami</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow"><span class="idx">01.</span> about</div>
+      <h2 class="sec-title">A full-stack developer moving into AI</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-body">
+        <p>
+          I'm a <b>Software Developer</b> based in Mumbai with over two and a half years of experience designing,
+          building, and maintaining scalable web applications. My day-to-day work centers on the .NET ecosystem —
+          <b>C#, ASP.NET, ASP.NET Core, MVC</b> — paired with <b>Angular</b> on the front end and
+          <b>MS SQL Server</b> for data.
+        </p>
+        <p>
+          Beyond feature work, I care about the things that make software trustworthy: resolving performance
+          issues and security vulnerabilities, and applying <b>OWASP</b> best practices to keep systems stable,
+          secure, and compliant.
+        </p>
+        <p>
+          Over the last year I've been pulling <b>AI/ML</b> into that toolkit — building a <b>RAG-powered chatbot</b>
+          with Python and LLMs and wiring it into an ASP.NET application via REST APIs, alongside personal projects
+          in computer vision and predictive modelling. I'm an adaptable, continuous learner, and I'm most interested
+          in the overlap between dependable backend engineering and intelligent, data-driven features.
+        </p>
+      </div>
+      <div class="info-card">
+        <div class="info-row"><span class="info-key">location</span><span class="info-val">Mumbai, India</span></div>
+        <div class="info-row"><span class="info-key">email</span><span class="info-val"><a href="mailto:bagdekunal96@gmail.com">bagdekunal96@gmail.com</a></span></div>
+        <div class="info-row"><span class="info-key">phone</span><span class="info-val">+91 98905 63483</span></div>
+        <div class="info-row"><span class="info-key">github</span><span class="info-val"><a href="https://github.com/kunalbagde01" target="_blank" rel="noopener">github.com/kunalbagde01</a></span></div>
+        <div class="info-row"><span class="info-key">linkedin</span><span class="info-val"><a href="https://linkedin.com/in/kunal-bagde-04168321b" target="_blank" rel="noopener">/kunal-bagde</a></span></div>
+        <div class="info-row"><span class="info-key">languages</span><span class="info-val">English, Hindi, Marathi</span></div>
+        <div class="info-row"><span class="info-key">interests</span><span class="info-val">Sports, Sketching, Chess</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow"><span class="idx">02.</span> experience</div>
+      <h2 class="sec-title">Commit history</h2>
+      <p class="sec-desc">A running log of where I've worked and what shipped while I was there.</p>
+    </div>
+
+    <div class="log-list" id="logList">
+      <!-- Experience entries are rendered from the EXPERIENCE array in the script below -->
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow"><span class="idx">03.</span> projects</div>
+      <h2 class="sec-title">Things I've built</h2>
+      <p class="sec-desc">Personal and academic projects spanning computer vision, predictive modelling, and applied ML.</p>
+    </div>
+    <div class="proj-grid" id="projGrid">
+      <!-- Project cards are rendered from the PROJECTS array in the script below -->
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow"><span class="idx">04.</span> skills</div>
+      <h2 class="sec-title">package.json</h2>
+      <p class="sec-desc">The languages, frameworks, and tools I work with day to day.</p>
+    </div>
+    <div class="skills-json"><pre><span class="ln">1</span><span class="p">{</span>
+<span class="ln">2</span>  <span class="k">"languages"</span><span class="p">:</span> [<span class="s">"C#"</span>, <span class="s">"Python"</span>, <span class="s">"TypeScript"</span>, <span class="s">"JavaScript"</span>, <span class="s">"VB"</span>, <span class="s">"HTML"</span>, <span class="s">"CSS"</span>]<span class="p">,</span>
+<span class="ln">3</span>  <span class="k">"frameworks"</span><span class="p">:</span> [<span class="s">"ASP.NET"</span>, <span class="s">"ASP.NET Core"</span>, <span class="s">"ASP.NET MVC"</span>, <span class="s">"Angular"</span>]<span class="p">,</span>
+<span class="ln">4</span>  <span class="k">"databases"</span><span class="p">:</span> [<span class="s">"MS SQL Server"</span>, <span class="s">"Oracle Database"</span>]<span class="p">,</span>
+<span class="ln">5</span>  <span class="k">"ai_ml"</span><span class="p">:</span> [<span class="s">"AI/ML fundamentals"</span>, <span class="s">"LLMs"</span>, <span class="s">"RAG"</span>, <span class="s">"MLOps"</span>]<span class="p">,</span>
+<span class="ln">6</span>  <span class="k">"practices"</span><span class="p">:</span> [<span class="s">"OWASP"</span>, <span class="s">"DBMS"</span>, <span class="s">"OOP"</span>]<span class="p">,</span>
+<span class="ln">7</span>  <span class="k">"tools"</span><span class="p">:</span> [<span class="s">"Visual Studio"</span>, <span class="s">"VS Code"</span>, <span class="s">"MS-SQL"</span>, <span class="s">"Jupyter Notebook"</span>, <span class="s">"BurpSuite"</span>, <span class="s">"JIRA"</span>, <span class="s">"Git/GitHub"</span>, <span class="s">"TFS"</span>, <span class="s">"Clockify"</span>, <span class="s">"GreytHR"</span>]
+<span class="ln">8</span><span class="p">}</span></pre></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow"><span class="idx">05.</span> education</div>
+      <h2 class="sec-title">Education & certifications</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="deg">Bachelor of Engineering</div>
+        <div class="inst">Rajiv Gandhi Institute of Technology, Mumbai</div>
+        <div class="meta">2019 – 2023 &nbsp;·&nbsp; 8.67 / 10 CGPA</div>
+      </div>
+      <div class="edu-card">
+        <div class="deg">Higher Secondary Certificate</div>
+        <div class="inst">Samarth Jr. College of Arts and Science, Ramtek</div>
+        <div class="meta">2018 – 2019 &nbsp;·&nbsp; Nagpur, India</div>
+      </div>
+    </div>
+    <div class="edu-card cert-row">
+      <div class="deg">Data Science Course — Code with Harry</div>
+      <div class="inst">08/2025 – 11/2025</div>
+      <p class="sec-desc" style="margin-top:10px;">Hands-on experience in AI, data analysis, machine learning fundamentals, and real-world project implementation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-eyebrow"><span class="idx">06.</span> contact</div>
+    <h2 class="sec-title">Let's build something.</h2>
+    <p class="sec-desc" style="margin:14px auto 0;">Open to full-stack and AI-adjacent roles. The fastest way to reach me is email.</p>
+    <div class="contact-links">
+      <a href="mailto:bagdekunal96@gmail.com" class="btn btn-primary">bagdekunal96@gmail.com</a>
+      <a href="tel:+919890563483" class="btn btn-ghost">+91 98905 63483</a>
+      <a href="https://github.com/kunalbagde01" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      <a href="https://linkedin.com/in/kunal-bagde-04168321b" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Kunal Bagde. Built with HTML, CSS &amp; a little bit of terminal nostalgia.
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

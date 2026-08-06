@@ -21,9 +21,9 @@ const EXPERIENCE = [
   {
     role: "Software Developer",
     company: "Alpha Plus Technology, Mumbai",
-    branch: "first",
+    branch: "Previous",
     period: "07/2023 — 02/2026",
-    current: fasle,
+    current: false,
     commits: [
       "Designed, built, and maintained <b>scalable web applications</b> using C#, ASP.NET, ASP.NET Core, MVC, and Angular.",
       "Implemented new features while resolving bugs, performance issues, and <b>security vulnerabilities</b>, applying OWASP best practices.",
@@ -92,12 +92,7 @@ function renderExperience(){
         ${job.commits.map(c => `<li>${c}</li>`).join('')}
       </ul>
     </div>
-  `).join('') + `
-    <div class="add-role">
-      <div class="log-dot"></div>
-      <div class="hint">// add your next role in the EXPERIENCE array — it'll appear here automatically</div>
-    </div>
-  `;
+  `).join('');
 }
 
 function renderProjects(){
@@ -115,12 +110,7 @@ function renderProjects(){
       <div class="proj-desc">${p.desc}</div>
       <div class="proj-tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
     </div>
-  `).join('') + `
-    <div class="proj-card placeholder">
-      <div class="plus">+</div>
-      <p>Add your next project<br>to the PROJECTS array</p>
-    </div>
-  `;
+  `).join('');
 }
 
 renderExperience();

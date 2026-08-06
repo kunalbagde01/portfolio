@@ -7,11 +7,23 @@
 
 const EXPERIENCE = [
   {
-    role: "Software Engineer",
-    company: "Alpha Plus Technology, Mumbai",
+    role: "Software Developer",
+    company: "Puthur Infotech pvt. ltd.(Nuclear Power Corporation of India Limited, Mumbai) ",
     branch: "main",
-    period: "07/2023 — Present",
+    period: "02/2026 — Present",
     current: true,
+    commits: [
+      "Designed, built, and maintained <b>scalable web applications</b> using C#, ASP.NET, VB, ColdFusion.",
+      "<b>Server Health Monitoring:</b> Check CPU, memory, disk space, and network load to prevent app crashes and downtime",
+      "Identify and fix slow-running queries, missing indexes, and high latency issues."
+    ]
+  },
+  {
+    role: "Software Developer",
+    company: "Alpha Plus Technology, Mumbai",
+    branch: "first",
+    period: "07/2023 — 02/2026",
+    current: fasle,
     commits: [
       "Designed, built, and maintained <b>scalable web applications</b> using C#, ASP.NET, ASP.NET Core, MVC, and Angular.",
       "Implemented new features while resolving bugs, performance issues, and <b>security vulnerabilities</b>, applying OWASP best practices.",
